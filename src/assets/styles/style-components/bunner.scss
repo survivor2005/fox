@@ -1,0 +1,238 @@
+.banner {
+    background-color: $color-2;
+    // margin: auto;
+    // height: fit-content;
+    position: relative;
+    background: radial-gradient(1600px 485px at top, $color-2 99%, $color-1 99.4%);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;
+    // gap: 18px;
+    z-index: 1;
+    position: relative;
+    color: $text-color-1;
+    font-weight: bold;
+}
+
+.header__logo {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+.header__tel-link {
+    margin-left: auto;
+    margin-right: 32px;
+    white-space: nowrap;
+}
+
+.header__mail-link {
+    margin-right: 10%;
+    white-space: nowrap;
+}
+
+.header__tel-img, .header__mail-img {
+    width: 18px;
+    height: 18px;
+}
+
+.header__logon-btn {
+    @include button1($width: 136px, $height: 47px);
+    font-size: $font-size-1;
+    gap: 10px;
+    margin-right: 10px;
+    img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+.header__partner-btn {
+    @include button1($width: 231px, $height: 47px);
+    font-size: $font-size-1;
+    gap: 10px;
+    img {
+        width: 24px;
+        height: 16px;
+    }
+}
+
+
+.banner__screen-phone {
+    max-width: 568px;
+    // min-width: 254px;
+    // width: 100%;
+    z-index: 1;
+    margin: auto;
+    position: relative;
+    img {
+        width: 100%;
+    }
+}
+
+.bunner__soc {
+    display: flex;
+    flex-direction: column;
+    gap: 21.17px;
+    align-items: center;
+    position: absolute;
+    right: 28px;
+    top: 282px;
+}
+
+.banner__ball-box > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bunner__ball-9 {
+    top: 10%;
+    left: 30%;
+}
+
+.bunner__ball-4 {
+    top: 12%;
+    left: 55%;
+}
+
+.bunner__ball-12 {
+    top: 18%;
+    left: 74%;
+}
+
+.bunner__ball-3 {
+    top: 40%;
+    left: 85%;
+}
+
+.bunner__ball-2 {
+    top: 50%;
+    left: 72%;
+}
+
+.bunner__ball-1 {
+    top: 66%;
+    left: 83%;
+}
+
+.bunner__ball-10 {
+    top: 60%;
+    left: 58%;
+    z-index: 1;
+}
+
+.bunner__ball-13 {
+    top: 86%;
+    left: 47%;
+}
+
+.bunner__ball-5 {
+    top: 90%;
+    left: 25%;
+}
+
+.bunner__ball-6 {
+    top: 62%;
+    left: 18%;
+}
+
+.bunner__ball-11 {
+    top: 50%;
+    left: 30%;
+}
+
+.bunner__ball-7 {
+    top: 52%;
+    left: 8%;
+}
+
+.bunner__ball-8 {
+    top: 35%;
+    left: 6%;
+}
+
+
+.banner__ball-box > * > img {
+    width: 100%;
+}
+
+
+
+
+@media (max-width: $medium-width) {
+    .header__logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .header__logo-img {
+        width: 100%;
+    }
+
+    .header__mail-link {
+        margin-right: 19px;
+    }
+    
+
+    .header__tel, .header__mail {
+        display: none;
+    }
+
+    .header__logon-btn {
+        background-color: initial;
+        width: initial;
+        height: initial;
+        padding: 0 10px;
+    }
+
+    .header__logon-title {
+        display: none;
+    }
+
+    .banner__screen-phone {
+        max-width: 254px;
+        top: initial;
+        // bottom: -60px;
+    }
+
+    .bunner__soc {
+        top: 160px;
+    }
+
+}
+
+
+
+
+@media (max-width: $small-width) {
+    .header__logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header__tel-link {
+        margin-left: initial;
+    }
+
+    .header__partner-btn {
+        background-color: initial;
+        width: initial;
+        height: initial;
+        padding: 0 10px;
+    }
+
+
+    .header__partner-title {
+        display: none;
+    }
+
+    .banner__ball-box {
+        display: none;
+    }
+}

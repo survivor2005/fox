@@ -1,0 +1,139 @@
+.reviews {
+    background-image: url('../img/bg.png'), radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.reviews > .container {
+    display: flex;
+    gap: 65px;
+}
+
+.reviews__screen-phone {
+    min-width: 160px;
+    align-self: center;
+}
+
+.reviews__screen-phone-img {
+    width: 100%;
+}
+
+.reviews__review-box {
+    color: $text-color-1;
+    margin: 9.8% 0;
+    max-width: 445px;
+    width: 100%;
+}
+
+.reviews__header {
+    font-size: $font-size-title1;
+    text-transform: uppercase;
+    font-weight: bold;
+    img {
+        vertical-align: top;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.reviews__descr {
+    @include p($fs: $font-size-3, $lh: 21px);
+    margin-top: 20px;
+}
+
+.reviews__indicator-box{
+    display: flex;
+    margin-top: 20px;
+    gap: 6px;
+}
+
+.reviews__indicator {
+    background-color: $color-1;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+}
+
+.reviews__indicator-active {
+    width: 81px;
+    border-radius: 100px;
+}
+
+.reviews__list {
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reviews__item {
+    
+}
+
+.reviews__text {
+    @include p($fs: $font-size-2, $lh: 24px);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.reviews__person {
+    display: block;
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+
+
+
+@media (max-width: $medium-width) {
+    .reviews > .container {
+        padding-bottom: 80px;
+    }
+
+    .reviews__screen-phone {
+        display: none;
+    }
+    .reviews__review-box {
+        max-width: initial;
+    }
+    .reviews__header {
+        font-size: $font-size-title2;
+        img {
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+    }
+
+    .reviews__descr {
+        margin-top: 27px;
+    }
+
+    .reviews__text {
+        font-size: $font-size-3;
+        line-height: 21px;
+    }
+
+    .reviews__person {
+        font-size: $font-size-3;
+        line-height: 21px;
+    }
+}
+
+
+
+@media (max-width: $small-width) {
+    .reviews__descr {
+        margin-top: 17px;
+    }
+
+    .reviews__indicator-box {
+        margin-top: 10px;
+    }
+
+    .reviews__list {
+        margin-top: 10px;
+    }
+}

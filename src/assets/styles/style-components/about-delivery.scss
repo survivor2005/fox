@@ -1,0 +1,92 @@
+.about-delivery {
+    background: radial-gradient(95.07% 139.28% at 50% -43.54%, #FFAB00 0%, #FFCD68 29.64%, #FFAB00 85.3%, #FFAB00 100%);
+}
+
+.about-delivery > .container {
+    display: flex;
+    column-gap: 30px;
+}
+
+.about-delivery__courier {
+    width: 540px;
+    flex-shrink: 1;
+    img {
+        width: 100%;
+    }
+}
+
+
+.about-delivery__box {
+    padding: 62px 0;
+    color: $text-color-1;
+    max-width: 523px;
+    flex-shrink: 2;
+    align-self: center;
+}
+
+.about-delivery__title {
+    font-weight: bold;
+    font-size: $font-size-title1;
+    text-transform: uppercase;
+    img {
+        width: 30px;
+        height: 30px;
+        vertical-align: top;
+        margin-left: 10px;
+    }
+}
+
+.about-delivery__descr {
+    @include p($lh: 21px, $fs: $font-size-3);
+    margin-top: 30px;
+}
+
+@media (max-width: $medium-width) {
+    .about-delivery__courier {
+        width: 160px;
+        align-self: center;
+    }
+
+    .about-delivery__title {
+        font-size: $font-size-title2;
+        line-height: 19px;
+        img {
+            width: 19px;
+            height: 19px;
+        }
+    }
+
+    .about-delivery__descr {
+        margin-top: 15px;
+        font-size: $font-size-3;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: $small-width) {
+    .about-delivery {
+        position: relative;
+    }
+
+    .about-delivery__box {
+        padding: 17px 0;
+    }
+
+    .about-delivery__title {
+        font-size: $font-size-4;
+        max-width: 50%;
+    }
+
+    .about-delivery__descr {
+        font-size: $font-size-4;
+        margin-top: 10px;
+        line-height: 19.5px;
+    }
+
+    .about-delivery__courier {
+        position: absolute;
+        width: 126px;
+        top: -120px;
+        right: 32px;
+    }
+}

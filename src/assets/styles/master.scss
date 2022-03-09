@@ -1,0 +1,50 @@
+@font-face {
+    font-family:'roboto'; /* Имя шрифта */
+    font-display: swap;
+    src: url("../font/roboto/Roboto-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family:'ubuntu'; /* Имя шрифта */
+    font-display: swap;
+    src: url("../font/ubuntu/Ubuntu-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+// размер экрана
+$max-width: 1440px;
+$medium-width: 992px;
+$small-width: 768px;
+$max-content: 1110px;
+$min-width: 320px;
+
+// отступы
+$base-indent: 165px;
+$medium-indent: 113px;
+$small-indent: 32px;
+
+// размер шрифта
+$font-size-1: 18px;
+$font-size-2: 16px;
+$font-size-3: 14px;
+$font-size-4: 13px;
+$font-size-5: 12px;
+$font-size-title1: 32px;
+$font-size-title2: 16px;
+$font-size-title3: 13px;
+
+// цвет шрифта
+$text-color-1: #FFFFFF;
+$text-color-2: #FFAB00;
+$text-color-3: #768C9B;
+$text-color-4: #4E5C66;
+$text-color-5: #414141;
+$text-color-6: #FFDF9E;
+
+// цвета
+$color-1: #FFFFFF;
+$color-2: #FFAB00;
+
+// Высота строк
+$line-height-1: 21px;
+$line-height-2: 24.5px;
+$line-height-3: 19.5px;

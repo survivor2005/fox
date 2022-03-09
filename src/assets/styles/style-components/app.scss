@@ -1,0 +1,121 @@
+.app {
+    background-color: $color-1;
+    box-sizing: border-box;
+}
+
+.app__container {
+    display: flex;
+    column-gap: 125px;
+}
+
+.app__screen-phone {
+    flex-shrink: 1;
+    z-index: 1;
+    align-self: flex-start;
+    img {
+        width: 100%;
+    }
+}
+
+.app__about-box {
+    max-width: 628px;
+    align-self: center;
+    flex-shrink: 3;
+}
+
+.app__title {
+    font-size: 42px;
+    font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    span {
+        color: $text-color-2;
+    }
+    img {
+        margin-left: 14px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.app__descr {
+    @include p($lh: 27px, $color: $text-color-3);
+    margin-top: 25px;
+}
+
+.app__download {
+    display: flex;
+    gap: 23px;
+    margin-top: 73px;
+}
+
+.app__download-link {
+    max-width: 215px;
+    width: 100%;
+    min-width: 117px;
+}
+
+.app__download-img {
+    width: 100%;
+}
+
+@media (max-width: $medium-width) {
+    .app__container {
+        gap: 30px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    .app__screen-phone {
+        max-width: 160px;
+    }
+
+    .app__about-box {
+        margin-top: 18px;
+    }
+
+    .app__title {
+        font-size: $font-size-title2;
+        img {
+            margin-left: 5px;
+            width: 19px;
+            height: 19px;
+        }
+    }
+    .app__descr {
+        font-size: $font-size-3;
+        margin-top: 9px;
+        line-height: 21px;
+    }
+
+    .app__download {
+        margin-top: 9px;
+        gap: 21px;
+    }
+
+    .app__download-link {
+        width: 117px;
+    }
+}
+
+
+
+
+@media (max-width: $small-width) {
+    .app__screen-phone {
+        display: none;
+    }
+
+    .app__title {
+        img {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .app__descr {
+        font-size: $font-size-4;
+        margin-top: 11px;
+        line-height: 19px;
+    }
+}

@@ -1,0 +1,100 @@
+.footer {
+    background-color: $color-2;
+    padding: 10px 0;
+}
+
+.footer > .container {
+    display: flex;
+    align-items: center;
+    color: $text-color-1;
+    font-size: $font-size-2;
+    font-weight: bold;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+}
+
+.footer__logo {}
+
+.footer__tel {
+    margin-left: auto;
+    margin-right: 32px;
+}
+
+.footer__mail {
+    margin-right: 98px;
+}
+
+.footer__logon-img, .footer__partner-img {
+    display: none;
+}
+
+.footer__tel-img, .footer__mail-img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__logon-btn {
+    @include button1($width: 102px, $height: 47px);
+    font-weight: 700;
+    font-size: $font-size-1;
+}
+
+.footer__partner-btn {
+    @include button1($width: 197px, $height: 47px);
+    display: none;
+    font-size: $font-size-1;
+}
+
+@media (max-width: $medium-width) {
+    .footer > .container {
+        gap: 19px;
+    }
+
+    .footer__tel, .footer__mail {
+        margin-right: initial;
+        span {
+            display: none;
+        }
+    }
+
+    .footer__logon-btn {
+        background-color: transparent;
+        padding: 0;
+        width: auto;
+        span {
+            display: none;
+        }
+    }
+
+    .footer__logon-img {
+        display: initial;
+    }
+
+    .footer__partner-btn {
+        display: initial;
+        justify-self: flex-end;
+    }
+}
+
+@media (max-width: $small-width) {
+    .footer > .container {
+        justify-content: space-between;
+    }
+
+    .footer__tel {
+        margin-left: initial;
+    }
+
+    .footer__partner-btn {
+        background-color: transparent;
+        padding: 0;
+        width: auto;
+        span {
+            display: none;
+        }
+    }
+
+    .footer__partner-img {
+        display: initial;
+    }
+}

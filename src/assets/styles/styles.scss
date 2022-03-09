@@ -1,0 +1,74 @@
+@import "./master.scss";
+@import "./mixins.scss";
+
+html {
+    min-width: $min-width;
+}
+
+body {
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+button, span, p, a {
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+.main {
+    max-width: $max-width;
+    margin: auto;
+}
+
+.container {
+    max-width: $max-content;
+    margin: auto;
+    padding-left: $base-indent;
+    padding-right: $base-indent;
+}
+
+h1, h2, h3, h4, strong {
+    font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+input {
+    border: unset;
+}
+
+button {
+    border: unset;
+}
+
+select {
+    border: unset;
+}
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+@import "./style-components/bunner.scss";
+@import "./style-components/app.scss";
+@import "./style-components/your-rest.scss";
+@import "./style-components/platform.scss";
+@import "./style-components/about-delivery.scss";
+@import "./style-components/faq.scss";
+@import "./style-components/reviews.scss";
+@import "./style-components/contact-us.scss";
+@import "./style-components/footer.scss";
+
+@media (max-width: $medium-width) {
+    .container {
+        padding-left: $medium-indent;
+        padding-right: $medium-indent;
+    }
+}
+
+@media (max-width: $small-width) {
+    .container {
+        padding-left: $small-indent;
+        padding-right: $small-indent;
+    }
+}

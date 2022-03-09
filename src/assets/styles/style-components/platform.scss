@@ -1,0 +1,103 @@
+.platform {
+    padding: 70px 0;
+}
+
+.platform > .container {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.platform__about {
+    margin-top: 40px;
+    width: 445px;
+}
+
+.platform__title {
+    max-width: 370px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 38px;
+    span {
+        color: $text-color-2;
+        font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+    }
+    img {
+        height: 30px;
+        vertical-align: top;
+    }
+}
+
+.platform__descr {
+    @include p($fs: $font-size-3, $color: $text-color-4, $lh: 21px);
+    margin-top: 30px;
+}
+
+.platform__map-box {
+    width: 633px;
+    flex-shrink: 2;
+    img {
+        width: 100%;
+    }
+}
+
+@media (max-width: $medium-width) {
+    .platform {
+        padding: 45px 0;
+    }
+
+    .platform > .container {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .platform__title {
+        font-size: $font-size-title2;
+        line-height: 19px;
+        img {
+            height: 19px;
+        }
+    }
+
+    .platform__about {
+        width: initial;
+    }
+
+    .platform__descr {
+        font-size: $font-size-3;
+        margin-top: 15px;
+        line-height: 21px;
+    }
+
+    .platform__map-box {
+        width: 540px;
+    }
+}
+
+
+@media (max-width: $small-width) {
+    .platform {
+        padding: 30px 0;
+    }
+
+    .platform__map-box {
+        align-self: flex-start;
+        width: 158px;
+        margin-top: 7px;
+    }
+
+    .platform__title {
+        font-size: $font-size-title3;
+        line-height: 15.6px;
+        img {
+            height: 16px;
+        }
+    }
+
+    .platform__descr {
+        font-size: $font-size-4;
+        margin-top: 10px;
+        line-height: 19.5px;
+    }
+}

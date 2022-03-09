@@ -1,0 +1,22 @@
+@mixin p ($fs: $font-size-1, $lh: $line-height-1, $color: inherit) {
+    font-size: $fs;
+    line-height: $lh;
+    color: $color;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    @content;
+}
+
+@mixin button1 ($width: max-content, $height: initial) {
+    width: $width;
+    height: $height;
+    border-radius: 100px;
+    padding: 14px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-1;
+    color: $text-color-2;
+    font-weight: bold;
+    white-space: nowrap;
+}
